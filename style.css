@@ -1,0 +1,149 @@
+html , body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: rgb(251, 212, 218) !important;
+}
+
+.cont{
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar{
+    font-size: 2vw;
+    background-color : #fff;
+    text-align: center;
+}
+
+.toggle{
+    background-color: blueviolet;
+}
+.toggle a{
+    color: #fff !important;
+}
+
+.nav-bar-items ul , .name-n-links ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 70px 0px;
+
+}
+
+.nav-bar a{
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.cloud a{
+    color: blueviolet;
+}
+
+.protfolio-image{
+    box-shadow: 0px 0px 29px 2vw rgb(197, 197, 197);
+    position: relative;
+    flex: 2;
+}
+
+.protfolio-image img{
+    width: 100%;
+}
+
+.name-n-links{
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+}
+.name-n-links h1{
+    margin: 0px;
+    font-size: 4vw;
+    font-weight: 700;
+}
+ 
+.name-n-links ul{
+    margin: 0px;
+}
+
+.name-n-links li{
+    display: inline-block;  
+    padding: 1vw;
+}
+
+.name-n-links a{
+    font-size: 2vw; 
+    color: black; 
+}
+
+.content{
+    background-color: #fff;
+    flex: 3;
+    padding: 30px;
+    height: 41vw;
+    overflow-y: scroll;
+}
+
+.content .about-me{
+    font-size: 20px;
+    text-align: justify;
+    border-bottom: 2px solid rgb(179, 178, 178);
+}
+
+.services-items{
+    margin-bottom: 15px;
+}
+
+.services h1{
+    font-weight: 900;
+    margin: 20px 0px;
+} 
+
+.services-menu h4{
+    font-weight: 800;
+    margin: 0px;
+}
+.services p{
+    text-align: justify;
+} 
+
+.services-menu i{
+    font-size: 3vw;
+}
+
+.nav-bar-items a:hover , .cloud a:hover , .name-n-links a:hover , .services i{   
+    color: blueviolet !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    html , body {
+        display: block;
+        background-color: lightblue !important;
+    }
+
+    .cont{
+        display: block;
+        max-width: 100% !important;
+    }
+    .nav-bar-items ul{
+        margin: 0px;
+    }
+    .name-n-links h1 , .nav-bar{
+        font-size: 2rem;
+    }
+    .name-n-links a , .services-menu i{
+        font-size: 1.5rem;
+    }
+    .content{
+        overflow-y: visible;
+        height: fit-content;
+        padding: 10px;
+    }
+
+
+  }
